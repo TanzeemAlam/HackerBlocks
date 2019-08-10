@@ -1,0 +1,57 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+    
+    static boolean isMatchingPair(char character1, char character2) 
+    { 
+       if (character1 == '(' && character2 == ')') 
+         return true; 
+       else if (character1 == '{' && character2 == '}') 
+         return true; 
+       else if (character1 == '[' && character2 == ']') 
+         return true; 
+       else
+         return false; 
+    } 
+    
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        
+        Stack<Character> stack = new Stack<Character>();
+        int f = 0;
+        for(int i=0;i<s.length();i++){
+            char cc = s.charAt(i);
+            
+            if(cc == '{' || cc == '[' || cc == '(' )
+                stack.push(cc);
+                
+            if(cc == '}' || cc == ']' || cc == ')' ){
+                
+                if(stack.isEmpty()){
+                    f = 1;
+                    break;
+                }
+                else if(!isMatchingPair(stack.pop(),cc)){
+                    f = 1;
+                    break;
+                }
+            }
+            
+        }
+        
+        if(stack.isEmpty() && f == 1)
+            System.out.println("No");
+        else if(stack.isEmpty() && f == 0)
+            System.out.println("Yes");
+        else    
+            System.out.println("No");
+	}
+}
