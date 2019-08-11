@@ -1,0 +1,39 @@
+import sys
+
+def isPossible(a, n, m, c_min): 
+	s_count = 1
+	c_sum = 0
+	for i in range(n):
+		if (a[i] > c_min): 
+			return False
+		if (c_sum + a[i] > c_min): 
+
+			s_count += 1
+
+			c_sum = a[i] 
+
+			if (s_count > m): 
+				return False
+
+		else: 
+			c_sum += a[i] 
+
+	return True
+
+
+for _ in range(int(input())):
+    n,m = map(int,input().split())
+    l = list(map(int,input().split()))
+    
+    start, end = 0, sum(l)
+    result = sys.maxsize
+
+    while (start <= end): 
+    	mid = (start + end)//2
+    	if (isPossible(l, n, m, mid)): 
+    		result = min(result, mid) 
+    		end = mid - 1
+    	else: 
+    		start = mid + 1
+
+    print(result)
