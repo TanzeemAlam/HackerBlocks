@@ -1,0 +1,22 @@
+s = input()
+f = 0
+Stack = []
+for ch in s:
+    if ch==')':
+        top = Stack.pop()
+        element = 0
+        
+        while top!='(':
+            element += 1 
+            top = Stack.pop()
+        
+        if element<1:
+            f = 1 
+            break
+    else:
+        Stack.append(ch)
+
+if f:
+    print("true")
+else:
+    print("false")
