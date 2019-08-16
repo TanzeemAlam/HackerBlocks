@@ -1,0 +1,18 @@
+n = input()
+l = [int(n[i]) for i in range(len(n))]
+s = ""
+f = 0
+for i in range(len(l)):
+    a = 9-l[i]
+    if a<l[i]:
+        if a==0:
+            if f:
+                s += str(a)
+            else:
+                s += str(l[i])
+                f = 1
+        else:
+            s += str(a)
+    else:
+        s += str(l[i])
+print(s)
