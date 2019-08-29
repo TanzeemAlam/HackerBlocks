@@ -8,3 +8,4 @@
 * [COUNT NUMBER OF BINARY STRINGS](https://github.com/TanzeemAlam/HackerBlocks/blob/master/COUNT%20NUMBER%20OF%20BINARY%20STRINGS/COUNT%20NUMBER%20OF%20BINARY%20STRINGS.txt)
 * [DELETE NODES FROM BST](https://github.com/TanzeemAlam/HackerBlocks/blob/master/DELETE%20NODES%20FROM%20BST/DELETE%20NODES%20FROM%20BST.txt)
 * [EXIST OR NOT](https://github.com/TanzeemAlam/HackerBlocks/blob/master/EXIST%20OR%20NOT/EXIST%20OR%20NOT.txt)
+* [FIND MEDIAN OF BST](https://github.com/TanzeemAlam/HackerBlocks/blob/master/FIND%20MEDIAN%20OF%20BST/FIND%20MEDIAN%20OF%20BST.txt)
