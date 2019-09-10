@@ -9,3 +9,4 @@
 * [DELETE NODES FROM BST](https://github.com/TanzeemAlam/HackerBlocks/blob/master/DELETE%20NODES%20FROM%20BST/DELETE%20NODES%20FROM%20BST.txt)
 * [EXIST OR NOT](https://github.com/TanzeemAlam/HackerBlocks/blob/master/EXIST%20OR%20NOT/EXIST%20OR%20NOT.txt)
 * [FIND MEDIAN OF BST](https://github.com/TanzeemAlam/HackerBlocks/blob/master/FIND%20MEDIAN%20OF%20BST/FIND%20MEDIAN%20OF%20BST.txt)
+* [FIND UPPER AND LOWER BOUND](https://github.com/TanzeemAlam/HackerBlocks/blob/master/FIND%20UPPER%20AND%20LOWER%20BOUND/FIND%20UPPER%20AND%20LOWER%20BOUND.txt)
