@@ -1,0 +1,21 @@
+n = int(input())
+l = list(map(int,input().split()))
+k = int(input())
+
+for i in range(k):
+    e = int(input())
+    
+    index1 = -1
+    index2 = -1
+    if e not in l:
+        print(index1,index2)
+    else:
+        for j in range(0,len(l)):
+            if l[j] == e:
+                index1 = j 
+                break
+        for j in range(len(l)-1,-1,-1):
+            if l[j] == e:
+                index2 = j 
+                break
+        print(index1,index2)
