@@ -1,0 +1,11 @@
+from itertools import permutations
+for _ in range(int(input())):
+    n = int(input())
+    l = list(map(int,input().split()))
+    
+    m = '0'
+    for i in permutations(l,n):
+        num = "".join(map(str,i))
+        if num > m:
+            m = num
+    print(m)
