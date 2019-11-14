@@ -14,3 +14,4 @@
 * [FORM BIGGEST NUMBER](https://github.com/TanzeemAlam/HackerBlocks/blob/master/FORM%20BIGGEST%20NUMBER/FORM%20BIGGEST%20NUMBER.txt)
 * [GRAND TEMPLE](https://github.com/TanzeemAlam/HackerBlocks/blob/master/GRAND%20TEMPLE/GRAND%20TEMPLE.txt)
 * [HISTOGRAM](https://github.com/TanzeemAlam/HackerBlocks/blob/master/HISTOGRAM/HISTOGRAM.txt)
+* [HOSTEL VISIT](https://github.com/TanzeemAlam/HackerBlocks/blob/master/HOSTEL%20VISIT/HOSTEL%20VISIT.txt)
