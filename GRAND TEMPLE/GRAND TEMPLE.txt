@@ -1,0 +1,74 @@
+import java.util.*;
+class Main {
+    public static void main(String args[]) {
+        solve();
+    }
+    
+    private static void solve() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        List<XYPair<Integer, Integer>> list = new ArrayList<>();
+        
+        for (int i = 0; i < n; i++) {
+
+            XYPair<Integer, Integer> pair = new XYPair<>();
+            
+            int x = sc.nextInt(); 
+            int y = sc.nextInt();
+        
+            pair.setL(x);
+            pair.setR(y);
+
+            list.add(pair);
+        }
+
+        list.sort(Comparator.comparingInt(XYPair::getL));
+
+        int maxX = Math.max(0, list.get(0).getL());
+        for (int i = 1; i < list.size(); i++) {
+
+            int diff = list.get(i).getL() - list.get(i - 1).getL() - 1;
+            maxX = Math.max(maxX, diff);
+        }
+
+        list.sort(Comparator.comparingInt(XYPair::getR));
+
+        int maxY = Math.max(0, list.get(0).getR());
+        for (int i = 1; i < list.size(); i++) {
+
+            int diff = list.get(i).getR() - list.get(i - 1).getR() - 1;
+            maxY = Math.max(maxY, diff);
+        }
+
+        System.out.println(maxX * maxY);
+    }
+
+    private static class XYPair<L, R> {
+        private L l;
+        private R r;
+
+        public XYPair() {
+        }
+
+        public XYPair( L l, R r ) {
+            this.l = l;
+            this.r = r;
+        }
+
+        public L getL() {
+            return l;
+        }
+
+        public void setL( L l ) {
+            this.l = l;
+        }
+
+        public R getR() {
+            return r;
+        }
+
+        public void setR( R r ) {
+            this.r = r;
+        }
+    }
+}
