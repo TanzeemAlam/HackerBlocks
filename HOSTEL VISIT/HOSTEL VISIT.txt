@@ -1,0 +1,138 @@
+import java.util.*;
+import java.io.*;
+
+
+    class Data
+    {
+        long arr[];
+        int size;
+        int mark=0;
+        Data(int size)
+        {
+            this.size=size;
+            arr=new long[size+1];
+        }
+       
+        public void add(long v)
+        {
+           
+            boolean exe=false;
+            for(int i=mark;i>-1;i--)
+            {
+                if(arr[i]<=v)
+                {
+                    arr[i+1]=v;
+                    exe=true;
+                    break;
+                }
+                else
+                {
+                    arr[i+1]=arr[i];
+                }
+            }
+            mark++;
+            if(!exe)
+            {
+                arr[0]=v;
+            }
+           
+           
+        }
+       
+       
+    }
+
+    public class Main
+    {
+        public static void main(String $[])throws IOException
+        {
+            FastReader s=new FastReader(new BufferedReader(new InputStreamReader(System.in)));
+            PrintWriter out=new PrintWriter(System.out);
+            int n=s.nextInt();
+            int k=s.nextInt();
+           
+            Data d=new Data(n);
+           
+            n--;
+           
+            int c=s.nextInt();
+           
+            long x=s.nextInt();
+           
+            long y=s.nextInt();
+           
+            d.arr[0]=x*x+y*y;
+           
+            while(n-->0)
+            {
+                c=s.nextInt();
+               
+                if(c==2)
+                {
+                    out.println(d.arr[k-1]);
+                }
+                else
+                {
+                    x=s.nextInt();
+                    y=s.nextInt();
+                    d.add(x*x+y*y);
+                }
+               
+               
+            }
+            out.close();
+        }
+    }
+
+    class FastReader
+    {
+        BufferedReader br;
+        StringTokenizer st;
+        FastReader(BufferedReader br)
+        {
+            st=null;
+            this.br=br;
+        }
+        
+         String next()throws IOException
+        {
+            return nextToken();
+        }
+        int nextInt() throws IOException
+        {
+            return Integer.parseInt(nextToken());
+        }
+       
+        long nextLong()throws IOException
+        {
+            return Long.parseLong(nextToken());
+        }
+       
+        Double nextDouble()throws IOException
+        {
+            return Double.parseDouble(nextToken());
+        }
+       
+        String nextToken()throws IOException
+        {
+            while(st==null||!st.hasMoreTokens())
+            {
+                st=new StringTokenizer(br.readLine());
+            }
+           
+            return st.nextToken();
+        }
+        String nextLine()throws IOException
+        {
+            if(st==null||!st.hasMoreTokens())
+            {
+                return br.readLine();
+            }
+           
+            return st.nextToken();
+        }
+       
+}
+   
+
+
