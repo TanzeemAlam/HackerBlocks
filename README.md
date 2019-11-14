@@ -13,3 +13,4 @@
 * [FIRST NEGATIVE INTEGER IN EVERY WINDOW OF SIZE K](https://github.com/TanzeemAlam/HackerBlocks/blob/master/FIRST%20NEGATIVE%20INTEGER%20IN%20EVERY%20WINDOW%20OF%20SIZE%20K/FIRST%20NEGATIVE%20INTEGER%20IN%20EVERY%20WINDOW%20OF%20SIZE%20K.txt)
 * [FORM BIGGEST NUMBER](https://github.com/TanzeemAlam/HackerBlocks/blob/master/FORM%20BIGGEST%20NUMBER/FORM%20BIGGEST%20NUMBER.txt)
 * [GRAND TEMPLE](https://github.com/TanzeemAlam/HackerBlocks/blob/master/GRAND%20TEMPLE/GRAND%20TEMPLE.txt)
+* [HISTOGRAM](https://github.com/TanzeemAlam/HackerBlocks/blob/master/HISTOGRAM/HISTOGRAM.txt)
